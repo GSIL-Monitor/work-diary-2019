@@ -1,0 +1,96 @@
+A:http://192.168.2.148
+
+A:   不常用
+    A: Jenkins--地址
+        http://192.168.2.227:8080/job/xyh_testserver/
+        admin
+        wxk888888
+    B: 硬件设备
+        192.168.2.141 admin admin
+        192.168.2.148 admin admin123
+
+
+B: 腾讯云有关（）
+    A: 腾讯云测试（网站路径）
+        http://xyhtest.wx-vicmob.cc/client/#/dataList
+    B: 腾讯云日志：
+        A:登录信息
+            https://cloud.tencent.com/login/subAccount/237386449
+            developer
+            AFpJViLouXZEkOyfSH1+
+        B:日志开始定位地址
+          https://console.cloud.tencent.com/tke/service/detail/log?rid=4&clusterId=cls-c3ujqy0n&namespace=default&serviceName=robot
+    C: 腾讯云接口文档：
+        A:task
+            http://xyhtest.wx-vicmob.cc/api/task/swagger-ui.html
+        B:robot
+            A:
+            http://xyhtest.wx-vicmob.cc/api/robot/swagger-ui.html
+            B：参数
+            {"brokeFlag":0,"userId":1,"extensionNumber":"102","direction":1,"phoneNumber":"15000729951","cusId":1,"recordId":1,"prologue":"./wav/kaichangbai.wav","type":"call" ,"uuid":"666"}
+            {"brokeFlag":0,"userId":1,"extensionNumber":"102","direction":1,"phoneNumber":"18035941580","cusId":1,"recordId":1,"prologue":"./wav/kaichangbai.wav","type":"call" ,"uuid":"666"}
+    D:腾讯云sip 服务器管理
+        A:链接
+            http://115.159.0.90:8080/ui.html
+        B:密码
+            wxk888888
+    E:腾讯云数据库
+        sh-cdb-hm2uuz9o.sql.tencentcdb.com
+        vicmob
+        s2O3K6q5b67xLAxrFC
+        192.168.10.12:3306
+
+
+C:腾讯云-（MQ--rides--）
+    A:rides
+        A:项目链接：
+            redis:
+                database: 0
+                host: 192.168.10.46
+                port: 6379
+        B:工具链接
+            A:账号
+                115.159.0.90
+            B:端口
+                31205
+    B:MQ
+        A:项目链接：
+            rabbitmq:
+                host: 192.168.10.26
+                port: 5672
+                username: admin
+                password: wxk888888
+        B:可视化链接
+                A本地：
+                    http://192.168.2.227:15672
+                        A:账号
+                           xyh
+                        B:密码
+                            wxk888888
+                B:线上
+                     http://115.159.0.90:30216
+                        A:账号
+                           admin
+                        B:密码
+                            wxk888888
+D:配置文件
+    Gitlab
+        地址：https://git.code.tencent.com/vicmob/xyh_testserver.git
+        账号：vicmob
+        密码：wxk888888
+    上面分config-dev和config-test两个环境，分别存放开发和测试环境配置文件
+    Config配置中心：
+        bootstrap.properties文件里面
+        spring.cloud.config.server.git.uri=  gitlab地址
+        spring.cloud.config.server.git.search-paths= gitlab上面对应的文件夹名称
+        /actuator/bus-refresh 刷新配置文件
+    其他微服务
+        bootstrap.properties文件里面
+        spring.cloud.config.name= gitlab上面application名称
+        spring.cloud.config.profile= gitlab上面profile名称
+        spring.cloud.config.label= gitlab分支
+
+    注：切换不同环境测试文件步骤
+    1：config微服务里面切换文件夹名称，eureka地址以及RabitMq地址
+    2：其他微服务里面切换eureka地址
+    3：以后添加配置文件都在gitlab上面添加
