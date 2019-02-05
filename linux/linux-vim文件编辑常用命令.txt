@@ -1,3 +1,10 @@
+A:文件夹操作命令
+    rm -rf 目录名字      Linux删除文件夹命令
+    rm -f  文件名        Linux删除文件命令
+    mkdir  test Linux添加文件命令
+    touch   创建文件
+
+
 A:保存和退出命令：
     :w 保存修改
     :w new_filename 另存为指定文件
