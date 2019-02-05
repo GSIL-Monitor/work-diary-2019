@@ -1,0 +1,18 @@
+A:域名--（企业公司域名）TODO
+B:服务器
+    A:linux-命令 TODO
+    B:自己要部署一套 TODO
+    C:dock 容器 TODO
+C:spring -- cloud 项目部署 TODO
+D;spring --boot 项目
+    A:单点登陆 TODO
+    B:MQ TODO
+    C:rides TODO
+    D:服务注册 TODO
+    E:路由 TODO
+    F:日志  TODO
+    G:代码自动生成 TODO
+    H:配置文件--服务 TODO
+    I:代码自动打包（jeckts）TODO
+    J:
+
