@@ -9,11 +9,11 @@ A:2019年02月--2019年5月（技能提升和项目流程）
         A:单点登陆 TODO
         B:MQ TODO
         C:rides TODO
-        D:服务注册 TODO
-        E:路由 TODO
+        D:服务注册 eureka （ok）
+        E:路由 zull（ok）
         F:日志  TODO
         G:代码自动生成 TODO
-        H:配置文件--服务 TODO
+        H:配置文件--服务 configServer-configclient（ok）
         I:代码自动打包（jeckts）TODO
         J:
 
