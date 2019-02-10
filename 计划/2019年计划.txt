@@ -1,18 +1,26 @@
-A:域名--（企业公司域名）TODO
-B:服务器
-    A:linux-命令 TODO
-    B:自己要部署一套 TODO
-    C:dock 容器 TODO
-C:spring -- cloud 项目部署 TODO
-D;spring --boot 项目
-    A:单点登陆 TODO
-    B:MQ TODO
-    C:rides TODO
-    D:服务注册 TODO
-    E:路由 TODO
-    F:日志  TODO
-    G:代码自动生成 TODO
-    H:配置文件--服务 TODO
-    I:代码自动打包（jeckts）TODO
-    J:
+A:2019年02月--2019年5月（技能提升和项目流程）
+    A:域名--（企业公司域名）TODO
+    B:服务器
+        A:linux-命令 TODO
+        B:自己要部署一套 TODO
+        C:dock 容器 TODO
+    C:spring -- cloud 项目部署 TODO
+    D;spring --boot 项目
+        A:单点登陆 TODO
+        B:MQ TODO
+        C:rides TODO
+        D:服务注册 TODO
+        E:路由 TODO
+        F:日志  TODO
+        G:代码自动生成 TODO
+        H:配置文件--服务 TODO
+        I:代码自动打包（jeckts）TODO
+        J:
 
+B:2019年06月-2019年9月（职业规划--）
+    A:找到自己以后发展方向
+    B:买房
+    C:有自己的家
+    D:运用所有财力和人力完成（金钱自由化）
+        A:要有自己的产业和生意（可以用一生为只付出的）
+    E:
