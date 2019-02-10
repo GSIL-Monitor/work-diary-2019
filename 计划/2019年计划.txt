@@ -7,7 +7,7 @@ A:2019年02月--2019年5月（技能提升和项目流程）
     C:spring -- cloud 项目部署 TODO
     D;spring --boot 项目
         A:单点登陆 TODO
-        B:MQ TODO
+        B:MQ (socket colse)TODO
         C:rides TODO
         D:服务注册 eureka （ok）
         E:路由 zull（ok）
