@@ -1,4 +1,9 @@
 A:http://192.168.2.148
+TT:公司--线上
+    http://xyh.wx-vicmob.com/index.php?refersh
+    zhiyinhu
+    zhiyinhu720
+
 
 A:   不常用
     A: Jenkins--地址
