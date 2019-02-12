@@ -53,14 +53,16 @@ B:应该做的
         A:deveple--上传测试站点 -- TODO（找朱礼勇）
         B:手机端页面放到--page--static--里（页面接口）---TODO（找葛辉--给图洪磊）
         C:TODO--梁淮显（遇到）
-           MQ:{uuid:uuid,
-              cuId:客户数据id,（Integer）
-              callId：呼叫记录id,（Integer）
-              callMins：通话时长,（Integer）
-              okCount：肯定跳转次数,（Integer）
-              noCount：否定跳转册数,（Integer）
-              isHasKeyword：是否触发关键测（0：未触发 1：触发）（Integer）
+           MQ:{   uuid:uuid,（String）
+                  templateId: 话术模板id,（Integer）
+                  callMins：通话时长,（Integer）
+                  okCount：肯定跳转次数,（Integer）
+                  noCount：否定跳转册数,（Integer）
+                  isHasKeyword：是否触发关键测（0：未触发 1：触发）（Integer）,
+                  validCount：有效次数（Integer）
               }
+
+         redis里添加:intentionKeywords:关键字集合（String）--（TODO--给梁淮显）
 
 
 C：做了也不会错
