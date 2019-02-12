@@ -1,0 +1,92 @@
+A:模板消息通知：
+        A:模板消息场景
+            A:有意向客户时发送模板消息
+                A:行为分析时--生成-客户等级--时候触发-TODO--陆静波--（过程--放到MQ--里还是调--发动模板消息--接口）
+        B:推送配置（开发-功能）
+            A:推送配置列表
+                A:若选择‘默认设置’,则表示某话术模板未维护时，均按该默认设置的规则进行推送
+                B:话术模板--(非必填--ok)
+                C:企业名称--（ok）
+                D:客户等级--（ok）
+                E:是否加入短信（TODO--？）--陆工-杨修涛
+                F:微信推送方式(随机推送,固定推送,顺序推送,不推送)--TODO--推行方式--杨秀涛
+                G:是否加入CRM（OK）
+                若选中，则表示微信推送给相关的手机号后，立即把该记录转移至ＣＲＭ，并且分配给其相应的坐席
+            B:微信扫一扫
+                TODO-温馨提示：所有需要推送的手机号，请根据步骤进行手机号绑定，方可生效
+                A:关注炫音呼公众号  -TODO (公众号图片)
+                B:微信授权并绑定手机号
+                    A:JSDK--HTML5--页面--把用户--电话绑定到--fans表里 TODO
+            C:公众号设置
+                    A:
+
+            D:表设计：
+                A:员工表
+                    employee_id:  (员工id)
+                    user_id：（企业用户id）
+                    open_id:   (粉丝唯一标识)
+                    phone:    (手机号)
+
+                B:公众号基本信息表
+                    （TODO--自己开发--炫音呼公众号才需要）
+                    name:公众号名称
+                    token：微信Token
+                    AppId: 公总号AppId
+                    AppSecret：公众号 AppSecret
+                    access_token : access_token
+                    access_token_end_time:access_token到期时间
+                    template_id：模板消息ID
+                    original：   原始帐号
+                    wx_qrcode_url:   微信二维码
+                    create_time : 新增时间
+                    update_time ：修改时间
+
+                C:推送配置列表 watmth_push
+                    push_id: 推送配置ID
+                    user_id: 企业用户id
+                    template_id：话术模板id
+                    template_name：话术模板名称
+                    intention_names:客户意向等级集合
+                    is_sms ：是否加入短信：（TODO-不用)
+                    sms_template_id :短息id（TODO-不用)
+                    send_type: 微信推送方式 微信推送方式（1：全推送 2：推送 2：不推送）
+                    join_crm:  是否加入CRM      
+                D:watmth_push_employee 推送配置和员工关联表
+                    push_employee_id 推送配置和员工关联id
+                    employee_id   员工id
+                    push_id  推送配置id
+                    push_time  推送时间
+        C:咨询
+            A:推送配置列表
+                A:微信授权并绑定手机号（炫音呼--公众号）(是哪个公司--开发的)
+                (有没有授权给--其他第三方公司--提供炫音呼软件的公司)--TODO
+        D:功能实现（TODO--有疑问）--陆静波
+            A:方案(自己开发--炫音呼)
+                A:页面写到page--static里--TODO（葛辉--手机端页面--）
+                B:后台--新建项目
+
+
+
+
+        A:准备工作
+            A:炫音呼后台管理员？--TODO--陆工(授权)（）
+            B:老版第三方公众号管理员？--TODO--陆工（把--炫音呼域名加进--白名单）（JSKD和后台接口都可以调用）（王瑶）
+                A:天圆地方（韩建中）
+                B:智诚小店（韩建中）
+            C:老版公众号注册一个测试账号？
+                --TODO--陆工--看一下(炫音呼-中日直通车有没有--授权给微炫客--)(老版公众号--正式站点DB)
+                --TODO--或者新建一个账号（重新授权）
+            D:新建一个项目（microservice-client-message）
+
+                A:推送配置列表
+
+                B:微信扫一扫
+                    A:模板消息发送--TODO--（）
+                    B:
+
+             F:陆工
+                A: 白名单：115.159.0.90 （腾讯云），121.235.237.70（本地）
+                B: JS接口安全域名--添加
+                    http://xyhtest.wx-vicmob.cc
+
+

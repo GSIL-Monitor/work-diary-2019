@@ -55,11 +55,18 @@ C:腾讯云-（MQ--rides--）
                 31205
     B:MQ
         A:项目链接：
-            rabbitmq:
-                host: 192.168.10.26
-                port: 5672
-                username: admin
-                password: wxk888888
+            A本地：
+                rabbitmq:
+                   host: 192.168.2.227
+                   port: 5672
+                   username: xyh
+                   password: wxk888888
+            B:线上
+                rabbitmq:
+                    host: 192.168.10.26
+                    port: 5672
+                    username: admin
+                    password: wxk888888
         B:可视化链接
                 A本地：
                     http://192.168.2.227:15672
