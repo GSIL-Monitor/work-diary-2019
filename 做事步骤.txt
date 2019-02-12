@@ -10,7 +10,7 @@ A:必须做的
 
 B:应该做的
     A:数据库设计
-    B:项目建立--推送配置--TODO
+    B:项目建立--推送配置--TODO--microservice-client-push
     C:自动生成代码--TODO
     D:功能模块（代码）
         A:公总号设置
@@ -60,22 +60,6 @@ B:应该做的
               noCount：否定跳转册数,（Integer）
               isHasKeyword：是否触发关键测（0：未触发 1：触发）（Integer）
               }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 C：做了也不会错
