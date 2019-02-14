@@ -13,6 +13,10 @@ A:   不常用
     B: 硬件设备
         192.168.2.141 admin admin
         192.168.2.148 admin admin123
+    C: 本地 git 路径
+        http://192.168.2.111/users/sign_in
+        pengjun.yu
+        11111111
 
 
 B: 腾讯云有关（）
@@ -36,7 +40,7 @@ B: 腾讯云有关（）
             {"brokeFlag":0,"userId":1,"extensionNumber":"102","direction":1,"phoneNumber":"18035941580","cusId":1,"recordId":1,"prologue":"./wav/kaichangbai.wav","type":"call" ,"uuid":"666"}
     D:腾讯云sip 服务器管理
         A:链接
-            http://115.159.0.90:8080/ui.html
+            http://212.64.86.238:8080/ui.html
         B:密码
             wxk888888
     E:腾讯云数据库
