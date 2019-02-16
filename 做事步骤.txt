@@ -1,9 +1,85 @@
-推送配置---数据库设计
-        ---葛辉--任务（手机端绑定--和--模板消息跳转页面）和接口数量
-        ---张武--任务（3个模块）的接口数量
-        ---朱礼勇--任务（讨论--消息触发流程--和参数传递--）
-        ---梁淮献--redis--里模板数据--添加--（关键字参数）
-        ---陆工--根据用户--开线程--（生产--和消费数据）--（公众号--发送模板消息--所需域名配置）
+A:web端接口--(OK)
+B:手机端接口--开发(OK)
+
+A:葛辉
+    A:模板消息跳转--手机端页面--URL--TODO（郁朋--配置文件）
+    B:绑定手机号码--手机端页面--URL--TODO（张武页面）
+    C:模板消息跳转--手机端页面--后-调用接口--TODO（郁朋）
+B:张武
+    A:Crm 导入导出
+C:朱礼勇
+    A:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
+D:梁怀献
+    A:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
+E:陆工
+    A:拨打电话优化--TODO
+
+2019年2月13号
+A:必须做的
+    A:陆工给的demo (整合进去)--TODO--陆工
+        A: 定时任务关掉（ok）
+        B：新增--拨号任务--（1：redis 里放 2：循环发送任务）
+B:应该做的
+    A:发送模板消息接口
+        A:MQ 消费数据--(OK)--朱礼勇
+            A:access_token--7200秒
+            B:进行消息推送
+            C:跳转--手机端回话URL--
+        B;图片上传修改（ok）
+
+E:可以叫别人做的事：
+    A:deveple--上传测试站点 --
+    B:手机端页面放到--page--static--里（页面接口）
+    C:消息推送
+       A:梁怀献--朱礼勇
+           MQ: 对列名称：callRecordQueue
+           MQ:{   uuid:uuid,（String）
+                  templateId: 话术模板id,（Integer）
+                  callMins：通话时长,（Integer）
+                  okCount：肯定跳转次数,（Integer）
+                  noCount：否定跳转册数,（Integer）
+                  isHasKeyword：是否触发关键测（0：未触发 1：触发）（Integer）,
+                  validCount：有效次数（Integer）
+              }
+      B:OK--朱礼勇--到郁朋
+          MQ: 对列名称：wxMessageQueue
+          MQ:{
+                 uuid:uuid,（String）
+                 templateId: 话术模板id,（Integer）
+                 intentionId : 意向等级,(id)
+                 cusId ：客户id,
+                 userId：用户id,
+                 cusName:客户名称,
+                 cusTel:手机号,
+            }
+
+     D:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
+     E:页面生成二维码--TODO--张武（和葛辉对接）（链接后面拼接--userId）
+
+
+C：做了也不会错
+     A: 打电话--文档 TODO
+     B: 数据回滚 TODO
+     C: MQ --文档 TODO
+     D: 单点登录 TODO
+     E: 线路管理--文档 TODO
+     F: 角色管理--文档 TODO
+     D：初始化---文档 TODO
+        A:客户--客户意向等级表 TODO
+        B:crm -- 客户类型表 TODO
+        C:角色表-- TODO
+        D:用户角色表-- TODO
+        E:角色菜单表 TODO
+        D:菜单表 TODO
+        E:用户表 TODO
+D:可以找别人做的
+
+E:可以不做的
+
+F:额外任务：
+    A:父类 项目管理--springBoot--TODO
+    B:MQ生产者--（TODO-socket close）--MQ --消费者
+    C: redis --本地安装  TODO
 
 2019年2月13号
 A:必须做的
@@ -23,9 +99,9 @@ A:必须做的
     D:手机端接口--开发
 
 B:应该做的
-    A:数据库设计
-    B:项目建立--推送配置--TODO--microservice-client-push
-    C:自动生成代码--TODO
+    A:数据库设计--（ok）
+    B:项目建立--推送配置--（ok）
+    C:自动生成代码--（ok）
     D:功能模块（代码）
         A:公总号设置
             A:新增或修改-公众号--（ok）--张武
@@ -33,8 +109,8 @@ B:应该做的
         B:微信二维码
             A:第一步：关注公众号
                 A:查询-公众号--（ok）--张武
-            B:第二步：微信授权并绑定手机号--TODO--葛辉
-                A:通过页面传的code 查询--用户实体（watmth_employee）
+            B:第二步：微信授权并绑定手机号
+                A:通过页面传的code 查询--用户实体（watmth_employee）--（ok）--葛辉
                     A:获取access_token(7200秒)
                     B:获取用户openid
                     C:根据用户openID和userid 查询是否已经绑定
@@ -42,29 +118,29 @@ B:应该做的
                         user_id:
                         open_id:
                         phone}
-                B:保存--watmth_employe  --TODO--葛辉
-                C:修改--watmth_employee --TODO--葛辉
-                D:页面生成二维码--TODO--张武（和葛辉对接）
+                B:绑定--watmth_employee --(OK)--葛辉
         C:推送配置列表
-            A:添加配置--TODO--张武
+            A:添加配置--（ok）--张武
                 A:话术模板查询--(OK)
                 B:企业名称固定--（ok)
                 C:客户等级(多选)查询--(ok)
                 D:添加推送--用户-
-            B:修改配置--TODO--张武
+            B:修改配置--（ok）--张武
                 A:删除所有推送用户
                 B:新增所有推送用户
-            C:查询推送配置(分页)--TODO--张武
-                A:话术模板名称--（TODO）(1:话术模板名称写死--)（MQ把话术模板生产）
+            C:查询推送配置(分页)--（ok）--张武
+                A:话术模板名称--（ok）(1:话术模板名称写死--)--
                     方案：每次修改模板（后放到MQ里）
-                B:企业名称--    （TODO）(1:企业名称写死--)（MQ把话术模板生产）
+                B:企业名称--    （OK）(1:企业名称写死--)（MQ把话术模板生产）
                     方案：每次修改模板（后放到MQ里）（直接写成用户名）
-                C:客户等级--    （无所谓--数据库写死的） (TODO) (客户意向等级写死--无所谓)
-            D:批量删除--TODO--张武
+                C:客户等级--   （OK） （无所谓--数据库写死的）
+            D:批量删除--(OK)--张武
 
-            E:查询fins 接口 --TODO--张武
+            E:查询fins 接口 --(OK)--张武
 
             F:发送模板消息接口--TODO--朱礼勇
+                A:access_token--7200秒
+                B:MQ 消费数据--进行消息推送
 
     E:可以叫别人做的事：
         A:deveple--上传测试站点 -- TODO（找朱礼勇）
@@ -79,7 +155,8 @@ B:应该做的
                   validCount：有效次数（Integer）
               }
 
-         redis里添加:intentionKeywords:关键字集合（String）--（TODO--给梁淮显）
+         D:redis里添加:intentionKeywords:关键字集合（String）--（TODO--给梁淮显）
+         E:页面生成二维码--TODO--张武（和葛辉对接）
 
 
 C：做了也不会错
