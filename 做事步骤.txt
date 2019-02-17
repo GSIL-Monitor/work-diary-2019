@@ -53,33 +53,33 @@ E:可以叫别人做的事：
                  cusTel:手机号,
             }
 
-     D:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
-     E:页面生成二维码--TODO--张武（和葛辉对接）（链接后面拼接--userId）
+     D:redis里添加:intentionKeywords:关键字集合（String）--（--郁朋给--梁怀献）
+     E:页面生成二维码----张武（和葛辉对接）（链接后面拼接--userId）
 
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
 
 F:额外任务：
-    A:父类 项目管理--springBoot--TODO
-    B:MQ生产者--（TODO-socket close）--MQ --消费者
-    C: redis --本地安装  TODO
+    A:父类 项目管理--springBoot--
+    B:MQ生产者--（-socket close）--MQ --消费者
+    C: redis --本地安装
 
 2019年2月13号
 A:必须做的
@@ -138,14 +138,14 @@ B:应该做的
 
             E:查询fins 接口 --(OK)--张武
 
-            F:发送模板消息接口--TODO--朱礼勇
+            F:发送模板消息接口----朱礼勇
                 A:access_token--7200秒
                 B:MQ 消费数据--进行消息推送
 
     E:可以叫别人做的事：
-        A:deveple--上传测试站点 -- TODO（找朱礼勇）
-        B:手机端页面放到--page--static--里（页面接口）---TODO（找葛辉--给图洪磊）
-        C:TODO--梁淮显（遇到）
+        A:deveple--上传测试站点 -- （找朱礼勇）
+        B:手机端页面放到--page--static--里（页面接口）---（找葛辉--给图洪磊）
+        C:--梁淮显（遇到）
            MQ:{   uuid:uuid,（String）
                   templateId: 话术模板id,（Integer）
                   callMins：通话时长,（Integer）
@@ -155,58 +155,58 @@ B:应该做的
                   validCount：有效次数（Integer）
               }
 
-         D:redis里添加:intentionKeywords:关键字集合（String）--（TODO--给梁淮显）
-         E:页面生成二维码--TODO--张武（和葛辉对接）
+         D:redis里添加:intentionKeywords:关键字集合（String）--（--给梁淮显）
+         E:页面生成二维码----张武（和葛辉对接）
 
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
 
 F:额外任务：
-    A:父类 项目管理--springBoot--TODO
-    B:MQ生产者--（TODO-socket close）--MQ --消费者
-    C: redis --本地安装  TODO
+    A:父类 项目管理--springBoot--
+    B:MQ生产者--（-socket close）--MQ --消费者
+    C: redis --本地安装
 
 2019年2月12号
 A:必须做的
-    A:拨打电话流程整理 TODO---
+    A:拨打电话流程整理 ---
         A:生产拨打电话记录
             A:redis（记录的存活时间）
             B:MQ(以用户为--对列--生产)
         B:消费拨打电话记录
             A:MQ(以用户为--对列--消费)
             B:sokect
-    B:陆工给的demo TODO--
+    B:陆工给的demo --
 
 B:应该做的
     A:数据库设计
-    B:项目建立--推送配置--TODO--microservice-client-push
-    C:自动生成代码--TODO
+    B:项目建立--推送配置----microservice-client-push
+    C:自动生成代码--
     D:功能模块（代码）
         A:公总号设置
-            A:新增-公众号--TODO--张武
-            B:修改-公众号--TODO--张武
-            C:查询-公众号--TODO--张武
+            A:新增-公众号----张武
+            B:修改-公众号----张武
+            C:查询-公众号----张武
         B:微信二维码
             A:第一步：关注公众号
-                A:查询-公众号--TODO--张武
-            B:第二步：微信授权并绑定手机号--TODO--葛辉
+                A:查询-公众号----张武
+            B:第二步：微信授权并绑定手机号----葛辉
                 A:通过页面传的code 查询--用户实体（watmth_employee）
                     A:获取access_token(7200秒)
                     B:获取用户openid
@@ -215,29 +215,29 @@ B:应该做的
                         user_id:
                         open_id:
                         phone}
-                B:保存--watmth_employe  --TODO--葛辉
-                C:修改--watmth_employee --TODO--葛辉
-                D:页面生成二维码--TODO--张武（和葛辉对接）
+                B:保存--watmth_employe  ----葛辉
+                C:修改--watmth_employee ----葛辉
+                D:页面生成二维码----张武（和葛辉对接）
         C:推送配置列表
-            A:添加配置--TODO--张武
+            A:添加配置----张武
                 A:话术模板查询--(OK)
                 B:企业名称固定--（ok)
                 C:客户等级(多选)查询--(ok)
                 D:添加推送--用户-
-            B:修改配置--TODO--张武
+            B:修改配置----张武
                 A:删除所有推送用户
                 B:新增所有推送用户
-            C:查询推送配置(分页)--TODO--张武
-                A:话术模板名称--（TODO）(1:话术模板名称写死--)（MQ把话术模板生产）
+            C:查询推送配置(分页)----张武
+                A:话术模板名称--（）(1:话术模板名称写死--)（MQ把话术模板生产）
                     方案：每次修改模板（后放到MQ里）
-                B:企业名称--    （TODO）(1:企业名称写死--)（MQ把话术模板生产）
+                B:企业名称--    （）(1:企业名称写死--)（MQ把话术模板生产）
                     方案：每次修改模板（后放到MQ里）（直接写成用户名）
-                C:客户等级--    （无所谓--数据库写死的） (TODO) (客户意向等级写死--无所谓)
-            D:批量删除--TODO--张武
+                C:客户等级--    （无所谓--数据库写死的） () (客户意向等级写死--无所谓)
+            D:批量删除----张武
     E:可以叫别人做的事：
-        A:deveple--上传测试站点 -- TODO（找朱礼勇）
-        B:手机端页面放到--page--static--里（页面接口）---TODO（找葛辉--给图洪磊）
-        C:TODO--梁淮显（遇到）
+        A:deveple--上传测试站点 -- （找朱礼勇）
+        B:手机端页面放到--page--static--里（页面接口）---（找葛辉--给图洪磊）
+        C:--梁淮显（遇到）
            MQ:{   uuid:uuid,（String）
                   templateId: 话术模板id,（Integer）
                   callMins：通话时长,（Integer）
@@ -247,39 +247,39 @@ B:应该做的
                   validCount：有效次数（Integer）
               }
 
-         redis里添加:intentionKeywords:关键字集合（String）--（TODO--给梁淮显）
+         redis里添加:intentionKeywords:关键字集合（String）--（--给梁淮显）
 
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
 
 F:额外任务：
-    A:父类 项目管理--springBoot--TODO
-    B:MQ生产者--（TODO-socket close）--MQ --消费者
-    C: redis --本地安装  TODO
+    A:父类 项目管理--springBoot--
+    B:MQ生产者--（-socket close）--MQ --消费者
+    C: redis --本地安装
 
 
 
 
 2019年2月10号
 A:必须做的
-    A:拨打电话流程整理 TODO
+    A:拨打电话流程整理
         A:生产拨打电话记录
             A:redis（记录的存活时间）
             B:MQ(以用户为--对列--生产)
@@ -298,35 +298,35 @@ B:应该做的
 
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
 
 F:额外任务：
-    A:父类 项目管理--springBoot--TODO
-    B:MQ生产者--（TODO-socket close）--MQ --消费者
-    C: redis --本地安装  TODO
+    A:父类 项目管理--springBoot--
+    B:MQ生产者--（-socket close）--MQ --消费者
+    C: redis --本地安装
 
 
 
 
 2019年2月10号
 A:必须做的
-    A:拨打电话流程整理 TODO
+    A:拨打电话流程整理
         A:生产拨打电话记录
             A:redis（记录的存活时间）
             B:MQ(以用户为--对列--生产)
@@ -338,28 +338,28 @@ A:必须做的
     C:找出报错原因 （ok--eureka-client-引用--eureka-server-jar包）
     D:eureka，zuul,config-(config-client--取值到--config-server)（ok）
     E:下载音乐播放器（ok）
-    F:父类 项目管理--springBoot--TODO
-    G:MQ生产者--（TODO-socket close）--MQ --消费者
+    F:父类 项目管理--springBoot--
+    G:MQ生产者--（-socket close）--MQ --消费者
 
 B:应该做的
     A：MQ--本地安装（OK）
-    B: redis --本地安装  TODO
+    B: redis --本地安装
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
@@ -367,7 +367,7 @@ E:可以不做的
 
 2019年2月4号
 A:必须做的
-    A:拨打电话流程整理 TODO
+    A:拨打电话流程整理
         A:生产拨打电话记录
             A:redis（记录的存活时间）
             B:MQ(以用户为--对列--生产)
@@ -377,24 +377,24 @@ A:必须做的
 
 B:应该做的
     A：MQ--本地安装（OK）
-    B: redis --本地安装  TODO
-    C: 写7日计划 TODO
+    B: redis --本地安装
+    C: 写7日计划
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
@@ -413,20 +413,20 @@ B:应该做的
 
 
 C：做了也不会错
-     A: 打电话--文档 TODO
-     B: 数据回滚 TODO
-     C: MQ --文档 TODO
-     D: 单点登录 TODO
-     E: 线路管理--文档 TODO
-     F: 角色管理--文档 TODO
-     D：初始化---文档 TODO
-        A:客户--客户意向等级表 TODO
-        B:crm -- 客户类型表 TODO
-        C:角色表-- TODO
-        D:用户角色表-- TODO
-        E:角色菜单表 TODO
-        D:菜单表 TODO
-        E:用户表 TODO
+     A: 打电话--文档
+     B: 数据回滚
+     C: MQ --文档
+     D: 单点登录
+     E: 线路管理--文档
+     F: 角色管理--文档
+     D：初始化---文档
+        A:客户--客户意向等级表
+        B:crm -- 客户类型表
+        C:角色表--
+        D:用户角色表--
+        E:角色菜单表
+        D:菜单表
+        E:用户表
 D:可以找别人做的
 
 E:可以不做的
