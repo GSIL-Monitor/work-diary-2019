@@ -2,13 +2,15 @@ A:web端接口--(OK)
 B:手机端接口--开发(OK)
 
 A:葛辉
-    A:模板消息跳转--手机端页面--URL--TODO（郁朋--配置文件）
-    B:绑定手机号码--手机端页面--URL--TODO（张武页面）
-    C:模板消息跳转--手机端页面--后-调用接口--TODO（郁朋）
+    A:模板消息跳转--手机端页面--URL--OK（郁朋--配置文件）
+        http://xyhtest.wx-vicmob.cc/xyhApiPage/service.html?callTemplateId=XXXX
+    B:绑定手机号码--手机端页面--URL--OK（张武页面）
+        http://xyhtest.wx-vicmob.cc/xyhApiPage/home.html?userId=XXXX
+    C:模板消息跳转--手机端页面--后-调用接口--OK（郁朋）
 B:张武
     A:Crm 导入导出
 C:朱礼勇
-    A:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
+    A: MQ--里的值没有消费（String）--（TODO--郁朋）
 D:梁怀献
     A:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
 E:陆工

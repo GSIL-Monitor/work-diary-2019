@@ -1,8 +1,11 @@
 A:http://192.168.2.148
+
 TT:公司--线上
     http://xyh.wx-vicmob.com/index.php?refersh
     zhiyinhu
     zhiyinhu720
+炫音呼API
+    http://192.168.2.101:6101/api/swagger-ui.html---
 
 
 A:   不常用
