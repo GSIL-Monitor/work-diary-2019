@@ -1,17 +1,26 @@
 2019年2月18号
 A:必须做的
+    A:是否加入CRM（TODO--郁朋）--朱礼勇
+        A:加入呼叫
+        B:走MQ
     A:陆工给的demo (整合进去)--TODO--陆工
         A: 定时任务关掉（ok）
         B：新增--拨号任务--（1：redis 里放 2：循环发送任务）
+     A:调接口超时 (整合进去)--TODO--陆工（葛密）
+            A: 定时任务关掉（ok）
+            B：新增--拨号任务--（1：redis 里放 2：循环发送任务）
 B:应该做的
     A:朱礼勇
         A: MQ--里的值没有消费（String）-OK-（ --郁朋）
+        B: intention_CustomerToCrmQueue--TODO--郁朋(是否加入CRM （0不加入，1加入）
+            hostiy
     B:梁怀献
-        A:redis里添加:intentionKeywords:关键字集合（String）-OK-（TODO--郁朋给--梁怀献）
+        A:redis里添加:intentionKeywords:关键字集合（String）-OK
     C:陆工
         A:拨打电话优化--TODO--郁朋
     D:程迎春
-        A:新建项目（message）--TODO--测试站点开通
+        A:项目（message）--TODO--测试站点开通 -- 7801
+        B:项目（xyhApiPage）--TODO--测试站点开通
     E:葛密
         A:redis用通用接口（TODO--郁朋给--葛密）
     F:葛辉
@@ -20,6 +29,7 @@ B:应该做的
             B:绑定手机号码--手机端页面--URL--OK（张武页面）
                 http://xyhtest.wx-vicmob.cc/xyhApiPage/home.html?userId=XXXX
             C:模板消息跳转--手机端页面--后-调用接口--OK（郁朋）
+
 
 E:可以叫别人做的事：
 
