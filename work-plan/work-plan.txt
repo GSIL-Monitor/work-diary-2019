@@ -11,11 +11,11 @@ B:应该做的
             http://xyhtest.wx-vicmob.cc/xyhApiPage/home.html?userId=XXXX
         C:模板消息跳转--手机端页面--后-调用接口--OK（郁朋）
     A:朱礼勇
-        A: MQ--里的值没有消费（String）--（TODO--郁朋）
+        A: MQ--里的值没有消费（String）-OK-（ --郁朋）
     B:梁怀献
-        A:redis里添加:intentionKeywords:关键字集合（String）--（TODO--郁朋给--梁怀献）
+        A:redis里添加:intentionKeywords:关键字集合（String）-OK-（TODO--郁朋给--梁怀献）
     C:陆工
-        A:拨打电话优化--TODO
+        A:拨打电话优化--TODO--郁朋
     D:程迎春
         A:新建项目（message）--TODO--测试站点开通
     E:葛密
