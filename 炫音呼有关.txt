@@ -25,6 +25,8 @@ A:   不常用
 B: 腾讯云有关（）
     A: 腾讯云测试（网站路径）
         http://xyhtest.wx-vicmob.cc/client/#/dataList
+        admin
+        11111111
     B: 腾讯云日志：
         A:登录信息
             https://cloud.tencent.com/login/subAccount/237386449
